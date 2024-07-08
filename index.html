@@ -9,39 +9,34 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
 
-        <div class="title">
+        <div class="title" id="title">
             <h1>EncriptadorWeb</h1>
         </div>
 
-        <div class="div-encrypt">
-            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa texto"></textarea>
-        </div>
-
-        <div class="text-only">
-            <p>Solo letras minusculas</p>
-        </div>
-
-        <div class="div-button">
-            <button type="button" class="encryptBtn" onclick="">Encriptar</button>
-            <input type="button" class="btn-decrypt" value="decrypt" onclick="">
-        </div>
-
-        <div class="div-encrypted">
-            <img src="" alt="#####">
-            <div class="messageen-encriptado">
-                <h2 class="title-msj">No hay msj todavia!!!</h2>
-                <p class="parrafp-msj">Inglrsa el texto que sea encriptar</p>
-                <textarea name="msj" cols="30" rows="10"></textarea>
+        <div class="div-encrypt"  id="div-encrypt">
+            <textarea name="texto" id="text-enter" cols="30" rows="10" placeholder="Ingresa texto"></textarea>
+            
+            <div class="text-only" id="text-only">
+                <p>Solo letras minusculas</p>
+            </div>
+            
+            <div class="div-button" id="div-button">
+                <button type="button" class="btn-encrypt" id="btn-encrypt" onclick= "encrypt()" >Encriptar</button>
+                <input type="button" class="btn-decrypt" id="btn-decrypt" value="decrypt" onclick="decrypted()">
             </div>
         </div>
-        <script src="js/scripts.js"></script>
-    </div>
-</body>
-
-<footer>
-    <h1>I'm footer</h1>
-</footer>
-
+            
+            <div class="div-encrypted" id="div-encrypted">
+                <img src="img/encrypted.avif" alt="img-encrypted" class="img-encrypted" id="img-encrypted">
+                <div class="messageen-encriptado" id="messageen-encriptado">
+                    <h2 class="title-msj" id="title-msj">No hay msj todavia!!!</h2>
+                    <p class="parrafp-msj" id="parrafp-msj">Inglrsa el texto que sea encriptar</p>
+                    <!-- <textarea class="messageen-text" name="msj" cols="30" rows="10"></textarea> -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/scripts.js"></script>
 </html>

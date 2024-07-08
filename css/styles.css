@@ -1,0 +1,238 @@
+
+:root{
+    --text-one:@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+    --text-two:@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Oswald:wght@200..700&display=swap');
+    --text-three:@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Nanum+Myeongjo&family=Oswald:wght@200..700&display=swap');
+}
+:root {
+    --primary-colour: #000000;
+    --secondary-colour: #FA05AD;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color:var(--primary-colour);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.title{
+    color: var(--secondary-colour);
+    font-family: var(--text-one);
+    width: 100%;
+    text-align: center;
+}
+
+.div-encrypt textarea{
+    background-color: var(--secondary-colour);
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-size: 20px;
+    /* text-align: center; */
+    line-height: 150%;
+    border-radius: 5%;
+}
+
+.div-encrypt textarea::placeholder{
+    font-family: var(--text-two);
+    color: var(--primary-colour);
+}
+
+.div-encrypt textarea:focus,
+textarea:active{
+  border: none;
+  outline: none;
+}
+
+.text-only{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.text-only p{
+    font-size: 9px;
+    color: var(--secondary-colour);
+    font-family: var(--text-three);
+    flex: none;
+}
+
+.div-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btn-encrypt{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 9px;
+    width:25%;
+    border-radius: 21px;
+    font-family: var(--text-one);
+    font-size: 13px;
+    text-align: center;
+    border: solid var(--primary-colour);
+    background-color: var(--secondary-colour);
+}
+
+.btn-decrypt{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap:8px;
+    background-color: var(--secondary-colour);
+    font-family: var(--text-one);
+    width: 25%;
+    border-radius: 21px;
+    font-size: 13px;
+    border: solid var(--primary-colour);
+}
+
+.btn-encrypt:hover,
+.btn-decrypt:hover{
+    margin: 0.3%;
+    width: 23.3%;
+    padding: 1.8%;
+    transition-delay: 0.4s
+}
+
+.div-encrypted{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 60%;
+    top:15%;
+    background-color: var(--secondary-colour);
+    box-shadow: 0px 24px 32px -8px ;
+    border-radius: 5%;
+}
+
+.messageen-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+     text-align: center;
+}
+
+.messageen-encriptado h2{
+    width: 65%;
+    font-family: var(--text-one);
+    color: var(--primary-colour);
+    font-size: 25px;
+    text-align: center;
+}
+
+.messageen-encriptado p{
+    font-family: var(--text-three);
+    color: var(--primary-colour);
+    width: 80%;
+    text-align: center;
+}
+.div-encrypted img {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 60%;
+    top: 3% ;
+}
+
+@media (max-width: 60.5em){
+    .title{
+        width: 80%;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-encrypt{
+        width: 100%;
+    }
+
+    .div-encrypt textarea{
+       width: 80%;
+       height: 60%;
+       left: 10%;
+       top: 5%;
+    }
+
+    .text-only{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .text-only p{
+        font-size: 16px;
+    }
+
+    .div-button{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn-encrypt .btn-decrypt{
+       width: 48%;
+       border-radius: 16px; 
+    }
+
+    .btn-encrypt:hover .btn-decrypt:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+  
+    .div-encrypted{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .messageen-encriptado{
+        width: 100%;
+        top: 5%;
+    }
+
+    .div-encrypted img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
