@@ -109,7 +109,7 @@ textarea:active{
     background-color: var(--secondary-colour);
     font-family: var(--text-one);
     width: 25%;
-    border-radius: 21px;
+    border-radius: 20px;
     font-size: 13px;
     border: solid var(--primary-colour);
 }
