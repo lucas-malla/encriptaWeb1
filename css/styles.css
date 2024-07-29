@@ -7,7 +7,8 @@
 :root {
     --primary-colour: #000000;
     --secondary-colour: #FA05AD;
-    
+    --palette-green-10: #c8fc47;
+    --palette-blue-10: #007aff;
 }
 
 * {
