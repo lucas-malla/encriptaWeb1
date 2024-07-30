@@ -6,9 +6,9 @@
 }
 :root {
     --primary-colour: #000000;
-    --secondary-colour: #FA05AD;
+    --secondary-colour: #f9fdfe;
     --palette-green-10: #c8fc47;
-    --palette-blue-10: #007aff;
+    --palette-blue-10: #09013d;
 }
 
 * {
@@ -17,17 +17,31 @@
 }
 
 .container{
-    background-color:var(--primary-colour);
+    background-color:var(--palette-blue-10);
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
 .title{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
     color: var(--secondary-colour);
     font-family: var(--text-one);
     width: 100%;
-    text-align: center;
+}
+
+.title img{
+    width: 3%;
+    border-radius: 75%;
+    margin:25px 35px ;
+    
+}
+
+.title h1{
+   color: var(--palette-green-10);
+   margin: 25px;
 }
 
 .div-encrypt textarea{
@@ -42,6 +56,7 @@
     /* text-align: center; */
     line-height: 150%;
     border-radius: 5%;
+
 }
 
 .div-encrypt textarea::placeholder{
@@ -53,6 +68,8 @@
 textarea:active{
   border: none;
   outline: none;
+  border: solid var(--palette-green-10);
+
 }
 
 .text-only{
@@ -76,8 +93,10 @@ textarea:active{
 
 .div-button{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    justify-content: center;
+    gap: 150px;
     padding: 1% 0;
     position: absolute;
     width: 80%;
@@ -95,7 +114,7 @@ textarea:active{
     font-family: var(--text-one);
     font-size: 13px;
     text-align: center;
-    border: solid var(--primary-colour);
+    border: solid var(--palette-green-10);
     background-color: var(--secondary-colour);
 }
 
@@ -112,7 +131,7 @@ textarea:active{
     width: 25%;
     border-radius: 20px;
     font-size: 13px;
-    border: solid var(--primary-colour);
+    border: solid var(--palette-green-10);
 }
 
 .btn-encrypt:hover,
@@ -120,7 +139,7 @@ textarea:active{
     margin: 0.3%;
     width: 23.3%;
     padding: 1.8%;
-    transition-delay: 0.4s
+    transition-delay: 0.7s
 }
 
 .div-encrypted{
@@ -128,12 +147,13 @@ textarea:active{
     justify-content: center;
     position: absolute;
     width: 30%;
-    height: 80%;
+    height: 60%;
     left: 60%;
     top:15%;
     background-color: var(--secondary-colour);
     box-shadow: 0px 24px 32px -8px ;
     border-radius: 5%;
+    border: solid var(--palette-green-10);
 }
 
 .messageen-encriptado{
